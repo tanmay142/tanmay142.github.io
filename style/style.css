@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    height: 7vh;
+}
+
+#img-logo {
+    height: 46px;
+}
+
+#ul-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 17px;
+}
+
+#ul-nav li {
+    list-style: none;
+    padding: 15px 18px;
+}
+
+#ul-nav li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.song-current{
+    background: #555;
+}
+
+
+.container {
+    color: white;
+    background-color: rgb(24, 23, 23);
+    height: 83vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.song-list{
+    font-family: 'Fjalla One', sans-serif;
+    position: sticky;
+    top:7vh;
+    height: 82.8vh;
+    overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+
+
+.song-box {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 15px;
+}
+.song-box img{
+    height:35px;
+}
+.song-box i{
+    cursor: pointer;
+}
+.song-int{
+cursor:default;
+   position: absolute;
+   left:5vw;
+    display: flex;
+    flex-direction: column;
+}
+.song-name{
+    font-size: 1.2rem;
+}
+.song-artist {
+    font-size: 0.7rem;
+    color: grey;
+}
+.song-banner h1{
+    font-size: 4rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.current-song{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.current-box{
+    padding: 66px 20px;
+   
+}
+.current-song img{
+    height: 45vh;
+    margin: 40px 40px;
+    margin-left: 50px;
+}
+
+#current-song-name{
+    font-size: 5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+#current-artist{
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+}
+
+
+
+
+
+.bottom {
+    color: white;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.song-info{
+    position: absolute;
+    left:0.5vw;
+}
+.bottom img{
+    height:45px;
+}
+
+
+.icons {
+    margin-bottom: 14px;
+
+}
+
+.icons i {
+    margin: 0px 5px;
+}
+
+#progressbar {
+    width: 50vw;
+    cursor: pointer;
+    accent-color: #1ED760;
+}
+
+
+@media only screen and (max-width:750px) {
+    .song-banner{
+        display: none;
+    }
+
+    .song-list{
+        width: 100vw;
+    }
+    #progressbar{
+        width: 96vw;
+    }
+
+    .song-int{
+        left: 20vw;
+    }
+    
+}
+@media only screen and (min-width:751px) and (max-width:1060px){
+    .song-banner{
+        display: none;
+    }
+
+    .song-list{
+        width: 100vw;
+    }
+    #progressbar{
+        width: 96vw;
+    }
+
+    .song-int{
+        left: 10vw;
+    }
+}

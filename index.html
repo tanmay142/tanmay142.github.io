@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your favourite music is here</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/f5bba7bfe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="div-nav">
+            <img id="img-logo" src="img/logo.png" alt="Spotify">
+        </div>
+        <ul id="ul-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       
+        <div class="song-list">
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song0" class="song-name">tecno on my mind</span>
+                <span class="song-artist">speedboys</span></div><span class="time-info">2:57 <i id="0" class="fa-regular songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song1" class="song-name">Indecisive</span>
+            <span class="song-artist">T & Sugah</span></div><span class="time-info">3:34 <i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song2" class="song-name">Desperate</span>
+            <span class="song-artist">NEFFEX</span></div><span class="time-info">3:15 <i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song3" class="song-name">Getting Down</span>
+            <span class="song-artist">JOXION</span></div><span class="time-info">2:20 <i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song4" class="song-name">Driver Seat</span>
+            <span class="song-artist">C1W</span></div><span class="time-info">2:29 <i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song5" class="song-name">No Money</span>
+            <span class="song-artist">Clarx, Zaug</span></div><span class="time-info">1:59 <i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song6" class="song-name">Fall Too Deep</span>
+            <span class="song-artist">Barmuda, Andrew A</span></div><span class="time-info">3:05 <i id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song7" class="song-name">What I Want</span>
+            <span class="song-artist">Ray Le Fanue, Britt Lari</span></div><span class="time-info">2:10 <i id="7" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song8" class="song-name">Think About Me</span>
+            <span class="song-artist">Yancle</span></div><span class="time-info">3:07 <i id="8" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song9" class="song-name">Keep Me Closer</span>
+            <span class="song-artist">Low Mileage</span></div><span class="time-info">2:20 <i id="9" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+            <div class="song-box"><img  alt=""><div class="song-int"><span id="song10" class="song-name">Take Away</span>
+            <span class="song-artist">borne</span></div><span class="time-info">2:34 <i id="10" class="fa-regular songItemPlay fa-circle-play"></i></span></div>
+        </div>
+        <div class="song-banner">
+            <h1>Now playing</h1>
+            <div class="current-song">
+                <img id="current-cover" src="covers/1.jpg" alt="">
+                <div class="current-box">
+                <div id="current-song-name">tecno on my mind</div>
+                <div id="current-artist">speedboys</div>
+            </div>        
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="icons">
+            <i id="previous" class="fa-solid fa-backward-step fa-2xl"></i>
+            <i id="masterPlay" class="fa-regular fa-circle-play fa-2xl"></i>
+            <i id="next" class="fa-solid fa-forward-step fa-2xl"></i>
+        </div>
+        <input type="range" name="progressbar" id="progressbar" value="0" min="0" max="100">
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
